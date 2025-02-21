@@ -14,7 +14,7 @@ import (
 
 const (
 	validCompDefMultiValidations = "../../../test/unit/common/oscal/valid-component-no-lula.yaml"
-	controlImplementationSource  = "https://github.com/mike-winberry/lulalib"
+	controlImplementationSource  = "https://github.com/defenseunicorns/lula"
 )
 
 func TestNewRequirementStore(t *testing.T) {
