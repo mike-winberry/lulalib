@@ -13,7 +13,10 @@ func PromptForConfirmation(spinner *Spinner) bool {
 
 	fmt.Println("Do you want to run executable validations? (y/n)")
 	var response string
-	fmt.Scanln(&response)
+	_, err := fmt.Scanln(&response)
+	if err != nil {
+		return false
+	}
 
 	return response == "y" || response == "Y"
 }
