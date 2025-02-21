@@ -10,10 +10,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"gopkg.in/yaml.v3"
 
-	"github.com/defenseunicorns/lula/src/cmd/validate"
-	"github.com/defenseunicorns/lula/src/pkg/common/oscal"
-	"github.com/defenseunicorns/lula/src/pkg/message"
-	"github.com/defenseunicorns/lula/src/types"
+	"github.com/mike-winberry/lulalib/src/cmd/validate"
+	"github.com/mike-winberry/lulalib/src/pkg/common/oscal"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 const (

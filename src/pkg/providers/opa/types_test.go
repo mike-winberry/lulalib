@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/defenseunicorns/lula/src/pkg/providers/opa"
+	"github.com/mike-winberry/lulalib/src/pkg/providers/opa"
 )
 
 func TestCreateOpaProvider(t *testing.T) {

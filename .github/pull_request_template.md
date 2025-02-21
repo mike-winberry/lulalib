@@ -17,5 +17,5 @@ Relates to #
 ## Checklist before merging
 
 - [ ] Test, docs, adr added or updated as needed
-- [ ] [Schema Updates](https://github.com/defenseunicorns/lula/blob/main/docs/community-and-contribution/schema-updates.md) applied
-- [ ] [Contributor Guide Steps](https://github.com/defenseunicorns/lula/blob/main/CONTRIBUTING.md) followed
+- [ ] [Schema Updates](https://github.com/mike-winberry/lulalib/blob/main/docs/community-and-contribution/schema-updates.md) applied
+- [ ] [Contributor Guide Steps](https://github.com/mike-winberry/lulalib/blob/main/CONTRIBUTING.md) followed

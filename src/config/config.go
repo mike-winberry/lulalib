@@ -3,7 +3,7 @@ package config
 
 // Global Configuration Constants.
 const (
-	GithubProject = "defenseunicorns/lula"
+	GithubProject = "mike-winberry/lulalib"
 )
 
 // Global Configuration Variables.

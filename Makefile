@@ -22,7 +22,7 @@ UNIT_PKG    := $(shell go list ./... | grep -v 'e2e')
 TAGS        :=
 TESTS       := .
 TESTFLAGS   ?= -race -v
-LDFLAGS     := -w -s -X 'github.com/defenseunicorns/lula/src/config.CLIVersion=$(CLI_VERSION)'
+LDFLAGS     := -w -s -X 'github.com/mike-winberry/lulalib/src/config.CLIVersion=$(CLI_VERSION)'
 GOFLAGS     ?=
 CGO_ENABLED ?= 0
 FUZZTIME := 10s

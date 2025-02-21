@@ -15,14 +15,14 @@ import (
 	goversion "github.com/hashicorp/go-version"
 	"k8s.io/apimachinery/pkg/util/yaml"
 
-	"github.com/defenseunicorns/lula/src/pkg/common/network"
-	"github.com/defenseunicorns/lula/src/pkg/domains/api"
-	"github.com/defenseunicorns/lula/src/pkg/domains/files"
-	kube "github.com/defenseunicorns/lula/src/pkg/domains/kubernetes"
-	"github.com/defenseunicorns/lula/src/pkg/message"
-	"github.com/defenseunicorns/lula/src/pkg/providers/kyverno"
-	"github.com/defenseunicorns/lula/src/pkg/providers/opa"
-	"github.com/defenseunicorns/lula/src/types"
+	"github.com/mike-winberry/lulalib/src/pkg/common/network"
+	"github.com/mike-winberry/lulalib/src/pkg/domains/api"
+	"github.com/mike-winberry/lulalib/src/pkg/domains/files"
+	kube "github.com/mike-winberry/lulalib/src/pkg/domains/kubernetes"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/pkg/providers/kyverno"
+	"github.com/mike-winberry/lulalib/src/pkg/providers/opa"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 const (

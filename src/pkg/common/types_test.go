@@ -4,8 +4,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/defenseunicorns/lula/src/config"
-	"github.com/defenseunicorns/lula/src/pkg/common"
+	"github.com/mike-winberry/lulalib/src/config"
+	"github.com/mike-winberry/lulalib/src/pkg/common"
 )
 
 func TestToLulaValidation(t *testing.T) {

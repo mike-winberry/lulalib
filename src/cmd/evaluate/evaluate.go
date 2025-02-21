@@ -9,11 +9,11 @@ import (
 	"github.com/defenseunicorns/go-oscal/src/pkg/files"
 	"github.com/spf13/cobra"
 
-	"github.com/defenseunicorns/lula/src/cmd/common"
-	pkgCommon "github.com/defenseunicorns/lula/src/pkg/common"
-	"github.com/defenseunicorns/lula/src/pkg/common/oscal"
-	"github.com/defenseunicorns/lula/src/pkg/common/result"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/cmd/common"
+	pkgCommon "github.com/mike-winberry/lulalib/src/pkg/common"
+	"github.com/mike-winberry/lulalib/src/pkg/common/oscal"
+	"github.com/mike-winberry/lulalib/src/pkg/common/result"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 )
 
 var evaluateHelp = `

@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/defenseunicorns/lula/src/types"
 	kjson "github.com/kyverno/kyverno-json/pkg/apis/policy/v1alpha1"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 type KyvernoProvider struct {

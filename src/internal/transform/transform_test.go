@@ -7,7 +7,7 @@ import (
 	goyaml "gopkg.in/yaml.v3"
 	"sigs.k8s.io/kustomize/kyaml/yaml"
 
-	"github.com/defenseunicorns/lula/src/internal/transform"
+	"github.com/mike-winberry/lulalib/src/internal/transform"
 )
 
 func createRNode(t *testing.T, data []byte) *yaml.RNode {

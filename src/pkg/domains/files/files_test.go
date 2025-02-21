@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/defenseunicorns/lula/src/types"
 	"github.com/google/go-cmp/cmp"
+	"github.com/mike-winberry/lulalib/src/types"
 	"github.com/stretchr/testify/require"
 )
 

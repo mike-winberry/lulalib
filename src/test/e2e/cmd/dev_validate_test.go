@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/defenseunicorns/lula/src/cmd/dev"
+	"github.com/mike-winberry/lulalib/src/cmd/dev"
 )
 
 func TestDevValidateCommand(t *testing.T) {

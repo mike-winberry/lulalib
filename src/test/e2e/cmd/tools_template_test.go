@@ -5,7 +5,7 @@ import (
 
 	"testing"
 
-	"github.com/defenseunicorns/lula/src/cmd/tools"
+	"github.com/mike-winberry/lulalib/src/cmd/tools"
 	"github.com/stretchr/testify/require"
 )
 

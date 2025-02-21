@@ -7,7 +7,7 @@ import (
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
 	"gopkg.in/yaml.v3"
 
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 )
 
 // NewCatalog creates a new catalog object from the given data.

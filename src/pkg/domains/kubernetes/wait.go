@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/defenseunicorns/lula/src/pkg/message"
 	pkgkubernetes "github.com/defenseunicorns/pkg/kubernetes"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"sigs.k8s.io/cli-utils/pkg/object"
 )

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/defenseunicorns/lula/src/internal/transform"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/internal/transform"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 )
 
 // LulaValidationTestData is a struct that contains the details of the test performed on the LulaValidation

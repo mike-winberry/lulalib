@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/defenseunicorns/lula/src/pkg/common/network"
+	"github.com/mike-winberry/lulalib/src/pkg/common/network"
 )
 
 func TestParseUrl(t *testing.T) {

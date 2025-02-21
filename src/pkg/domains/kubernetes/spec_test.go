@@ -3,7 +3,7 @@ package kube_test
 import (
 	"testing"
 
-	kube "github.com/defenseunicorns/lula/src/pkg/domains/kubernetes"
+	kube "github.com/mike-winberry/lulalib/src/pkg/domains/kubernetes"
 )
 
 func TestCreateKubernetesDomain(t *testing.T) {

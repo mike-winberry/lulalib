@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/defenseunicorns/lula/src/cmd"
+	"github.com/mike-winberry/lulalib/src/cmd"
 )
 
 func main() {

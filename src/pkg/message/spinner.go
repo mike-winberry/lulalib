@@ -6,8 +6,7 @@ import (
 	"bytes"
 	"fmt"
 	"strings"
-
-	"github.com/pterm/pterm"
+	"time"
 )
 
 var activeSpinner *Spinner
@@ -16,9 +15,8 @@ var sequence = []string{`  ⠋ `, `  ⠙ `, `  ⠹ `, `  ⠸ `, `  ⠼ `, `  ⠴
 
 // Spinner is a wrapper around pterm.SpinnerPrinter.
 type Spinner struct {
-	spinner        *pterm.SpinnerPrinter
-	startText      string
-	termWidth      int
+	text           string
+	stopChan       chan struct{}
 	preserveWrites bool
 }
 
@@ -30,25 +28,22 @@ func NewProgressSpinner(format string, a ...any) *Spinner {
 		return activeSpinner
 	}
 
-	var spinner *pterm.SpinnerPrinter
-	text := pterm.Sprintf(format, a...)
+	text := fmt.Sprintf(format, a...)
 	if NoProgress {
 		Info(text)
 	} else {
-		spinner, _ = pterm.DefaultSpinner.
-			WithRemoveWhenDone(false).
-			// Src: https://github.com/gernest/wow/blob/master/spin/spinners.go#L335
-			WithSequence(sequence...).
-			Start(text)
+		fmt.Print(text)
 	}
 
-	activeSpinner = &Spinner{
-		spinner:   spinner,
-		startText: text,
-		termWidth: pterm.GetTerminalWidth(),
+	spinner := &Spinner{
+		text:     text,
+		stopChan: make(chan struct{}),
 	}
 
-	return activeSpinner
+	go spinner.start()
+
+	activeSpinner = spinner
+	return spinner
 }
 
 // EnablePreserveWrites enables preserving writes to the terminal.
@@ -66,7 +61,7 @@ func (p *Spinner) Write(raw []byte) (int, error) {
 	size := len(raw)
 	if NoProgress {
 		if p.preserveWrites {
-			pterm.Printfln("     %s", string(raw))
+			fmt.Println(string(raw))
 		}
 
 		return size, nil
@@ -78,12 +73,12 @@ func (p *Spinner) Write(raw []byte) (int, error) {
 	for scanner.Scan() {
 		// Only be fancy if preserve writes is enabled.
 		if p.preserveWrites {
-			text := pterm.Sprintf("     %s", scanner.Text())
-			pterm.Fprinto(p.spinner.Writer, strings.Repeat(" ", pterm.GetTerminalWidth()))
-			pterm.Fprintln(p.spinner.Writer, text)
+			text := fmt.Sprintf("     %s", scanner.Text())
+			fmt.Println(strings.Repeat(" ", TermWidth))
+			fmt.Println(text)
 		} else {
 			// Otherwise just update the spinner text.
-			p.spinner.UpdateText(scanner.Text())
+			p.text = scanner.Text()
 		}
 	}
 
@@ -96,45 +91,37 @@ func (p *Spinner) Updatef(format string, a ...any) {
 		debugPrinter(2, fmt.Sprintf(format, a...))
 		return
 	}
-
-	pterm.Fprinto(p.spinner.Writer, strings.Repeat(" ", pterm.GetTerminalWidth()))
-	text := pterm.Sprintf(format, a...)
-	p.spinner.UpdateText(text)
+	p.text = fmt.Sprintf(format, a...)
 }
 
 // Stop the spinner.
 func (p *Spinner) Stop() {
-	if p.spinner != nil && p.spinner.IsActive {
-		//nolint:errcheck
-		p.spinner.Stop() // #nosec G104
+	select {
+	case <-p.stopChan:
+		// Channel is already closed, do nothing
+	default:
+		close(p.stopChan)
+		fmt.Println()
+		activeSpinner = nil
 	}
-	activeSpinner = nil
 }
 
 // Success prints a success message and stops the spinner.
 func (p *Spinner) Success() {
-	p.Successf("%s", p.startText)
+	p.Successf("%s", p.text)
 }
 
 // Successf prints a success message with the spinner and stops it.
 func (p *Spinner) Successf(format string, a ...any) {
-	text := pterm.Sprintf(format, a...)
-	if p.spinner != nil {
-		p.spinner.Success(text)
-	} else {
-		Info(text)
-	}
+	text := fmt.Sprintf(format, a...)
+	fmt.Println(text)
 	p.Stop()
 }
 
 // Warnf prints a warning message with the spinner.
 func (p *Spinner) Warnf(format string, a ...any) {
-	text := pterm.Sprintf(format, a...)
-	if p.spinner != nil {
-		p.spinner.Warning(text)
-	} else {
-		Warn(text)
-	}
+	text := fmt.Sprintf(format, a...)
+	fmt.Println("WARNING:", text)
 }
 
 // Errorf prints an error message with the spinner.
@@ -145,27 +132,31 @@ func (p *Spinner) Errorf(err error, format string, a ...any) {
 
 // Fatal calls message.Fatalf with the given error.
 func (p *Spinner) Fatal(err error) {
-	p.Fatalf(err, "%s", p.startText)
+	p.Fatalf(err, "%s", p.text)
 }
 
 // Fatalf calls message.Fatalf with the given error and format.
 func (p *Spinner) Fatalf(err error, format string, a ...any) {
-	if p.spinner != nil {
-		p.spinner.RemoveWhenDone = true
-		//nolint:errcheck
-		p.spinner.Stop() // #nosec G104
-		activeSpinner = nil
-	}
+	p.Stop()
 	Fatalf(err, format, a...)
 }
 
 // Pause the spinner.
 func (p *Spinner) Pause() string {
-	var spinnerText string
-	if p.spinner != nil && p.spinner.IsActive {
-		spinnerText = p.spinner.Text
-		//nolint:errcheck
-		p.spinner.Stop() // #nosec G104
+	p.Stop()
+	return p.text
+}
+
+func (p *Spinner) start() {
+	i := 0
+	for {
+		select {
+		case <-p.stopChan:
+			return
+		default:
+			fmt.Printf("\r%s %s", p.text, sequence[i%len(sequence)])
+			time.Sleep(100 * time.Millisecond)
+			i++
+		}
 	}
-	return spinnerText
 }

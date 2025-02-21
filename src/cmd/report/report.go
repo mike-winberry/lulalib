@@ -3,8 +3,8 @@ package report
 import (
 	"fmt"
 
-	"github.com/defenseunicorns/lula/src/internal/reporting"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/internal/reporting"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 	"github.com/spf13/cobra"
 )
 

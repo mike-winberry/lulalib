@@ -12,12 +12,12 @@ import (
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
 	"gopkg.in/yaml.v3"
 
-	"github.com/defenseunicorns/lula/src/pkg/common/composition"
-	"github.com/defenseunicorns/lula/src/pkg/common/oscal"
-	requirementstore "github.com/defenseunicorns/lula/src/pkg/common/requirement-store"
-	validationstore "github.com/defenseunicorns/lula/src/pkg/common/validation-store"
-	"github.com/defenseunicorns/lula/src/pkg/message"
-	"github.com/defenseunicorns/lula/src/types"
+	"github.com/mike-winberry/lulalib/src/pkg/common/composition"
+	"github.com/mike-winberry/lulalib/src/pkg/common/oscal"
+	requirementstore "github.com/mike-winberry/lulalib/src/pkg/common/requirement-store"
+	validationstore "github.com/mike-winberry/lulalib/src/pkg/common/validation-store"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 type Validator struct {

@@ -11,11 +11,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"sigs.k8s.io/yaml"
 
-	"github.com/defenseunicorns/lula/src/pkg/common"
-	"github.com/defenseunicorns/lula/src/pkg/domains/api"
-	kube "github.com/defenseunicorns/lula/src/pkg/domains/kubernetes"
-	"github.com/defenseunicorns/lula/src/pkg/providers/kyverno"
-	"github.com/defenseunicorns/lula/src/pkg/providers/opa"
+	"github.com/mike-winberry/lulalib/src/pkg/common"
+	"github.com/mike-winberry/lulalib/src/pkg/domains/api"
+	kube "github.com/mike-winberry/lulalib/src/pkg/domains/kubernetes"
+	"github.com/mike-winberry/lulalib/src/pkg/providers/kyverno"
+	"github.com/mike-winberry/lulalib/src/pkg/providers/opa"
 )
 
 const multiValidationPath = "../../test/e2e/scenarios/remote-validations/multi-validations.yaml"

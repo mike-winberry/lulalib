@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/defenseunicorns/lula/src/pkg/message"
-	"github.com/defenseunicorns/lula/src/types"
 	kjson "github.com/kyverno/kyverno-json/pkg/apis/policy/v1alpha1"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/types"
 
 	jsonengine "github.com/kyverno/kyverno-json/pkg/json-engine"
 )

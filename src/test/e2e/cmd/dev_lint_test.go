@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	oscalValidation "github.com/defenseunicorns/go-oscal/src/pkg/validation"
-	"github.com/defenseunicorns/lula/src/cmd/dev"
+	"github.com/mike-winberry/lulalib/src/cmd/dev"
 	"github.com/stretchr/testify/require"
 )
 

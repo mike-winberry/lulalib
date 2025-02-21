@@ -7,7 +7,7 @@ import (
 
 	"sigs.k8s.io/kustomize/kyaml/utils"
 
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 )
 
 type PartType int
@@ -28,7 +28,7 @@ type PathPart struct {
 // PathToParts converts the path string into a slice of pathParts
 func PathToParts(path string) []PathPart {
 	pathSlice := utils.SmarterPathSplitter(normalizePath(path), ".")
-	message.Debug("Path Slice: %v\n", pathSlice) // Helpful for understanding issues with how a path is parsed
+	message.Debugf("Path Slice: %v\n", pathSlice) // Helpful for understanding issues with how a path is parsed
 
 	return makePathParts(pathSlice)
 }

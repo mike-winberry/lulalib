@@ -12,7 +12,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"gopkg.in/yaml.v3"
 
-	"github.com/defenseunicorns/lula/src/pkg/common/oscal"
+	"github.com/mike-winberry/lulalib/src/pkg/common/oscal"
 )
 
 const validComponentPath = "../../../test/unit/common/oscal/valid-component.yaml"

@@ -12,14 +12,14 @@ import (
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
 	"sigs.k8s.io/yaml"
 
-	"github.com/defenseunicorns/lula/src/config"
-	"github.com/defenseunicorns/lula/src/pkg/common/schemas"
-	"github.com/defenseunicorns/lula/src/pkg/domains/api"
-	"github.com/defenseunicorns/lula/src/pkg/domains/files"
-	kube "github.com/defenseunicorns/lula/src/pkg/domains/kubernetes"
-	"github.com/defenseunicorns/lula/src/pkg/providers/kyverno"
-	"github.com/defenseunicorns/lula/src/pkg/providers/opa"
-	"github.com/defenseunicorns/lula/src/types"
+	"github.com/mike-winberry/lulalib/src/config"
+	"github.com/mike-winberry/lulalib/src/pkg/common/schemas"
+	"github.com/mike-winberry/lulalib/src/pkg/domains/api"
+	"github.com/mike-winberry/lulalib/src/pkg/domains/files"
+	kube "github.com/mike-winberry/lulalib/src/pkg/domains/kubernetes"
+	"github.com/mike-winberry/lulalib/src/pkg/providers/kyverno"
+	"github.com/mike-winberry/lulalib/src/pkg/providers/opa"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 // Define base errors for validations

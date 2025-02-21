@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/defenseunicorns/lula/src/cmd/dev"
+	"github.com/mike-winberry/lulalib/src/cmd/dev"
 	"github.com/stretchr/testify/require"
 )
 

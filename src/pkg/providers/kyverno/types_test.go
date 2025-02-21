@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/defenseunicorns/lula/src/pkg/providers/kyverno"
 	kjson "github.com/kyverno/kyverno-json/pkg/apis/policy/v1alpha1"
+	"github.com/mike-winberry/lulalib/src/pkg/providers/kyverno"
 )
 
 func TestCreateKyvernoProvider(t *testing.T) {
