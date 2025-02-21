@@ -6,7 +6,7 @@ toolchain go1.23.5
 
 require (
 	github.com/charmbracelet/bubbletea v1.2.4
-	github.com/charmbracelet/x/exp/teatest v0.0.0-20241220083205-e9f42afc4e49
+	github.com/charmbracelet/x/exp/teatest v0.0.0-20250219214358-0881292cec0a
 	github.com/defenseunicorns/go-oscal v0.6.2
 	github.com/defenseunicorns/pkg/kubernetes v0.3.0
 	github.com/google/go-cmp v0.6.0
