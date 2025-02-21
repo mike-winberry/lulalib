@@ -6,10 +6,10 @@ runs:
   steps:
     - name: Fix log permissions
       run: |
-        sudo chown $USER /tmp/lula-*.log || echo ""
+        sudo chown $USER /tmp/lulalib-*.log || echo ""
       shell: bash
 
     - uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
       with:
         name: debug-log
-        path: /tmp/lula-*.logd
+        path: /tmp/lulalib-*.logd
