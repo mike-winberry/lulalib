@@ -47,8 +47,8 @@ changelog:
 # Generate a GitHub release and publish the release for the tag
 release:
   github:
-    owner: defenseunicorns
-    name: lula
+    owner: mike-winberry
+    name: lulalib
   prerelease: auto
   mode: append
   draft: false
