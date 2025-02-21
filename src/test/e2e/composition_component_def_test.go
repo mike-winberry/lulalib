@@ -11,9 +11,9 @@ import (
 	"sigs.k8s.io/e2e-framework/pkg/envconf"
 	"sigs.k8s.io/e2e-framework/pkg/features"
 
-	"github.com/defenseunicorns/lula/src/pkg/common/composition"
-	"github.com/defenseunicorns/lula/src/pkg/common/validation"
-	"github.com/defenseunicorns/lula/src/test/util"
+	"github.com/mike-winberry/lulalib/src/pkg/common/composition"
+	"github.com/mike-winberry/lulalib/src/pkg/common/validation"
+	"github.com/mike-winberry/lulalib/src/test/util"
 )
 
 type compDefContextKey string

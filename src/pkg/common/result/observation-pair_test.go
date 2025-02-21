@@ -6,7 +6,7 @@ import (
 
 	"github.com/defenseunicorns/go-oscal/src/pkg/uuid"
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
-	"github.com/defenseunicorns/lula/src/pkg/common/result"
+	"github.com/mike-winberry/lulalib/src/pkg/common/result"
 )
 
 func createObservation(description, satisfaction string) *oscalTypes.Observation {

@@ -10,8 +10,8 @@ import (
 
 	"github.com/open-policy-agent/conftest/parser"
 
-	"github.com/defenseunicorns/lula/src/pkg/common/network"
-	"github.com/defenseunicorns/lula/src/types"
+	"github.com/mike-winberry/lulalib/src/pkg/common/network"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 type Domain struct {

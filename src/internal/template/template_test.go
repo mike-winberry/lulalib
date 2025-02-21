@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/defenseunicorns/lula/src/internal/template"
+	"github.com/mike-winberry/lulalib/src/internal/template"
 )
 
 func testRender(t *testing.T, templateRenderer *template.TemplateRenderer, templateString string, renderType template.RenderType, expected string) error {

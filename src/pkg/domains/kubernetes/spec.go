@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/defenseunicorns/lula/src/types"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 type KubernetesDomain struct {

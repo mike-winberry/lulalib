@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/defenseunicorns/lula/src/internal/template"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/internal/template"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 	"github.com/spf13/viper"
 )
 

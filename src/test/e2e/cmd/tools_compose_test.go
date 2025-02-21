@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/defenseunicorns/lula/src/cmd/tools"
-	"github.com/defenseunicorns/lula/src/pkg/common/oscal"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/cmd/tools"
+	"github.com/mike-winberry/lulalib/src/pkg/common/oscal"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 )
 
 func TestToolsComposeCommand(t *testing.T) {

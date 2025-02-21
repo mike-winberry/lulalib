@@ -7,8 +7,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/defenseunicorns/lula/src/pkg/message"
-	"github.com/defenseunicorns/lula/src/types"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 var getResourcesHelp = `
@@ -55,7 +55,7 @@ func DevGetResourcesCommand() *cobra.Command {
 			}
 
 			config, _ := cmd.Flags().GetStringSlice("set")
-			message.Debug("command line 'set' flags: %s", config)
+			message.Debugf("command line 'set' flags: %s", config)
 
 			output, err := DevTemplate(validationBytes, config)
 			if err != nil {

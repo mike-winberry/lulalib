@@ -5,9 +5,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/defenseunicorns/lula/src/cmd/common"
-	"github.com/defenseunicorns/lula/src/internal/template"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/cmd/common"
+	"github.com/mike-winberry/lulalib/src/internal/template"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 )
 
 type Option func(*Composer) error

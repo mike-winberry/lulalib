@@ -12,10 +12,10 @@ import (
 	"github.com/defenseunicorns/go-oscal/src/pkg/uuid"
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
 
-	"github.com/defenseunicorns/lula/src/internal/template"
-	"github.com/defenseunicorns/lula/src/pkg/common"
-	"github.com/defenseunicorns/lula/src/pkg/common/network"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/internal/template"
+	"github.com/mike-winberry/lulalib/src/pkg/common"
+	"github.com/mike-winberry/lulalib/src/pkg/common/network"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 )
 
 type Requirement struct {

@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/defenseunicorns/lula/src/pkg/common/network"
-	"github.com/defenseunicorns/lula/src/types"
+	"github.com/mike-winberry/lulalib/src/pkg/common/network"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 var (

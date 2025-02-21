@@ -9,12 +9,12 @@ import (
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
 	"github.com/spf13/cobra"
 
-	"github.com/defenseunicorns/lula/src/pkg/common"
-	"github.com/defenseunicorns/lula/src/pkg/common/composition"
-	"github.com/defenseunicorns/lula/src/pkg/common/network"
-	"github.com/defenseunicorns/lula/src/pkg/common/oscal"
-	"github.com/defenseunicorns/lula/src/pkg/message"
-	"github.com/defenseunicorns/lula/src/types"
+	"github.com/mike-winberry/lulalib/src/pkg/common"
+	"github.com/mike-winberry/lulalib/src/pkg/common/composition"
+	"github.com/mike-winberry/lulalib/src/pkg/common/network"
+	"github.com/mike-winberry/lulalib/src/pkg/common/oscal"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 var printHelp = `

@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
-	"github.com/defenseunicorns/lula/src/internal/template"
-	"github.com/defenseunicorns/lula/src/pkg/common/composition"
+	"github.com/mike-winberry/lulalib/src/internal/template"
+	"github.com/mike-winberry/lulalib/src/pkg/common/composition"
 	"github.com/stretchr/testify/require"
 	"gopkg.in/yaml.v3"
 )

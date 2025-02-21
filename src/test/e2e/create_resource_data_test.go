@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/defenseunicorns/lula/src/pkg/common/validation"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/pkg/common/validation"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 	appsv1 "k8s.io/api/apps/v1"
 	batchv1 "k8s.io/api/batch/v1"
 	corev1 "k8s.io/api/core/v1"

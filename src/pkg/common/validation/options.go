@@ -3,8 +3,8 @@ package validation
 import (
 	"fmt"
 
-	"github.com/defenseunicorns/lula/src/pkg/common/composition"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/pkg/common/composition"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 )
 
 type Option func(*Validator) error

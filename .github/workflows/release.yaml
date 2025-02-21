@@ -55,9 +55,9 @@ jobs:
       - name: Setup golang
         uses: ./.github/actions/golang
 
-      - name: Make lula executable
+      - name: Make lulalib executable
         run: |
-          chmod +x bin/lula
+          chmod +x bin/lulalib
 
       # Build the example packages and run the tests
       - name: Run e2e tests
@@ -93,15 +93,6 @@ jobs:
           name: build-artifacts
           path: bin/
 
-      - name: Get Brew tap repo token
-        id: brew-tap-token
-        uses: actions/create-github-app-token@136412a57a7081aa63c935a2cc2918f76c34f514 # v1.11.2
-        with:
-          app-id: ${{ secrets.HOMEBREW_TAP_WORKFLOW_GITHUB_APP_ID }}
-          private-key: ${{ secrets.HOMEBREW_TAP_WORKFLOW_GITHUB_APP_SECRET }}
-          owner: defenseunicorns
-          repositories: homebrew-tap
-
       # Create the GitHub release notes
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@9ed2f89a662bf1735a48bc8557fd212fa902bebf # v6.1.0
@@ -111,4 +102,3 @@ jobs:
           args: release --clean --verbose --config .goreleaser.yaml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
-          HOMEBREW_TAP_GITHUB_TOKEN: ${{ steps.brew-tap-token.outputs.token }}

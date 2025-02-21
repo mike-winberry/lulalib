@@ -3,8 +3,8 @@ package cmd_test
 import (
 	"testing"
 
-	"github.com/defenseunicorns/lula/src/cmd/report"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/cmd/report"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 	"github.com/stretchr/testify/require"
 )
 

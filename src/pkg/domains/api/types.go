@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/defenseunicorns/lula/src/types"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 // ApiDomain is a domain that is defined by a list of API requests.

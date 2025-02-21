@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/defenseunicorns/lula/src/internal/template"
+	"github.com/mike-winberry/lulalib/src/internal/template"
 )
 
 func ParseTemplateOverrides(setFlags []string) (map[string]string, error) {

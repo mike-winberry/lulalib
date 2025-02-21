@@ -1,7 +1,7 @@
 package message
 
 import (
-	"github.com/pterm/pterm"
+	"fmt"
 )
 
 func PromptForConfirmation(spinner *Spinner) bool {
@@ -11,8 +11,9 @@ func PromptForConfirmation(spinner *Spinner) bool {
 		defer spinner.Updatef("%s\n", spinnerText)
 	}
 
-	confirmation := pterm.DefaultInteractiveConfirm.WithDefaultText("Do you want to run executable validations?")
-	result, _ := confirmation.Show()
+	fmt.Println("Do you want to run executable validations? (y/n)")
+	var response string
+	fmt.Scanln(&response)
 
-	return result
+	return response == "y" || response == "Y"
 }

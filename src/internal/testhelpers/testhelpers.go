@@ -10,7 +10,7 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/x/exp/teatest"
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
-	"github.com/defenseunicorns/lula/src/pkg/common/oscal"
+	"github.com/mike-winberry/lulalib/src/pkg/common/oscal"
 )
 
 func OscalFromPath(t *testing.T, path string) *oscalTypes.OscalCompleteSchema {

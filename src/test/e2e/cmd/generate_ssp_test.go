@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/defenseunicorns/lula/src/cmd/generate"
-	"github.com/defenseunicorns/lula/src/pkg/common/oscal"
+	"github.com/mike-winberry/lulalib/src/cmd/generate"
+	"github.com/mike-winberry/lulalib/src/pkg/common/oscal"
 )
 
 func TestGenerateSSPCommand(t *testing.T) {
@@ -66,7 +66,7 @@ func TestGenerateSSPCommand(t *testing.T) {
 		outputFile := filepath.Join(tempDir, "output.yaml")
 
 		args := []string{
-			"--profile", "https://raw.githubusercontent.com/defenseunicorns/lula/refs/heads/main/src/test/unit/common/oscal/valid-profile-remote-rev4.yaml",
+			"--profile", "https://raw.githubusercontent.com/mike-winberry/lulalib/refs/heads/main/src/test/unit/common/oscal/valid-profile-remote-rev4.yaml",
 			"-o", outputFile,
 		}
 		err := test(t, args...)

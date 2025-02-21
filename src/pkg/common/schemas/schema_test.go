@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	oscalValidation "github.com/defenseunicorns/go-oscal/src/pkg/validation"
-	"github.com/defenseunicorns/lula/src/pkg/common/schemas"
+	"github.com/mike-winberry/lulalib/src/pkg/common/schemas"
 )
 
 func TestToMap(t *testing.T) {

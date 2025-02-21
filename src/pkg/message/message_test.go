@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -27,13 +27,13 @@ func TestUseBuffer(t *testing.T) {
 	message.Question("question msg")
 
 	bufOut := buf.String()
-	assert.Contains(t, bufOut, "info msg")
-	assert.Contains(t, bufOut, "debug msg")
-	assert.Contains(t, bufOut, "warn msg")
-	assert.Contains(t, bufOut, "success msg")
-	assert.Contains(t, bufOut, "detail msg")
-	assert.Contains(t, bufOut, "fail msg")
-	assert.Contains(t, bufOut, "note msg")
+	assert.Contains(t, bufOut, "INFO: info msg")
+	assert.Contains(t, bufOut, "DEBUG: debug msg")
+	assert.Contains(t, bufOut, "WARNING: warn msg")
+	assert.Contains(t, bufOut, "SUCCESS: success msg")
+	assert.Contains(t, bufOut, "DETAIL: detail msg")
+	assert.Contains(t, bufOut, "FAIL: fail msg")
+	assert.Contains(t, bufOut, "NOTE: note msg")
 	assert.Contains(t, bufOut, "printf msg")
-	assert.Contains(t, bufOut, "question msg")
+	assert.Contains(t, bufOut, "QUESTION: question msg")
 }

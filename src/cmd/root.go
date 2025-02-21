@@ -7,15 +7,14 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/defenseunicorns/lula/src/cmd/common"
-	"github.com/defenseunicorns/lula/src/cmd/console"
-	"github.com/defenseunicorns/lula/src/cmd/dev"
-	"github.com/defenseunicorns/lula/src/cmd/evaluate"
-	"github.com/defenseunicorns/lula/src/cmd/generate"
-	"github.com/defenseunicorns/lula/src/cmd/report"
-	"github.com/defenseunicorns/lula/src/cmd/tools"
-	"github.com/defenseunicorns/lula/src/cmd/validate"
-	"github.com/defenseunicorns/lula/src/cmd/version"
+	"github.com/mike-winberry/lulalib/src/cmd/common"
+	"github.com/mike-winberry/lulalib/src/cmd/dev"
+	"github.com/mike-winberry/lulalib/src/cmd/evaluate"
+	"github.com/mike-winberry/lulalib/src/cmd/generate"
+	"github.com/mike-winberry/lulalib/src/cmd/report"
+	"github.com/mike-winberry/lulalib/src/cmd/tools"
+	"github.com/mike-winberry/lulalib/src/cmd/validate"
+	"github.com/mike-winberry/lulalib/src/cmd/version"
 	"github.com/spf13/cobra"
 )
 
@@ -65,7 +64,6 @@ func init() {
 		evaluate.EvaluateCommand(),
 		generate.GenerateCommand(),
 		report.ReportCommand(),
-		console.ConsoleCommand(),
 		dev.DevCommand(),
 	}
 

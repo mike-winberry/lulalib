@@ -2,7 +2,7 @@ package reporting
 
 import (
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
-	"github.com/defenseunicorns/lula/src/pkg/common/oscal"
+	"github.com/mike-winberry/lulalib/src/pkg/common/oscal"
 )
 
 // Split the default controlMap into framework and source maps for further processing

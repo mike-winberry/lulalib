@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/defenseunicorns/lula/src/cmd/generate"
-	"github.com/defenseunicorns/lula/src/pkg/common/oscal"
+	"github.com/mike-winberry/lulalib/src/cmd/generate"
+	"github.com/mike-winberry/lulalib/src/pkg/common/oscal"
 )
 
 func TestGenerateProfileCommand(t *testing.T) {

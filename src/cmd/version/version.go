@@ -3,7 +3,7 @@ package version
 import (
 	"fmt"
 
-	"github.com/defenseunicorns/lula/src/config"
+	"github.com/mike-winberry/lulalib/src/config"
 
 	"github.com/spf13/cobra"
 )

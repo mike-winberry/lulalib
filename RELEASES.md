@@ -10,11 +10,11 @@ The Lula release cadence aims to happen every 2 weeks at a minimum.
 
 ## Release Checklist
 
-- [ ] Ensure a [milestone](https://github.com/defenseunicorns/lula/milestones) exists for the intended release version
-- [ ] Review Open [Pull Requests](https://github.com/defenseunicorns/lula/pulls)
+- [ ] Ensure a [milestone](https://github.com/mike-winberry/lulalib/milestones) exists for the intended release version
+- [ ] Review Open [Pull Requests](https://github.com/mike-winberry/lulalib/pulls)
   - [ ] Identify any candidates to be merged - Review PR milestone to determine intent
-  - [ ] Review all [renovate](https://github.com/defenseunicorns/lula/pulls?q=is%3Apr+is%3Aopen+renovate) Pull Requests. Determine if the update can be applied or if it should be reviewed further.
-- [ ] Add the identified release milestone to the [Release Please](https://github.com/defenseunicorns/lula/pulls?q=is%3Apr+is%3Aopen+label%3A%22autorelease%3A+pending%22) Pull Request
+  - [ ] Review all [renovate](https://github.com/mike-winberry/lulalib/pulls?q=is%3Apr+is%3Aopen+renovate) Pull Requests. Determine if the update can be applied or if it should be reviewed further.
+- [ ] Add the identified release milestone to the [Release Please](https://github.com/mike-winberry/lulalib/pulls?q=is%3Apr+is%3Aopen+label%3A%22autorelease%3A+pending%22) Pull Request
   - [ ] Ensure all tests pass
   - [ ] Review the Pull Request content - ensuring all merged Pull Requests are accounted
   - [ ] Approve and Merge the Pull Request
@@ -24,7 +24,6 @@ The Lula release cadence aims to happen every 2 weeks at a minimum.
   - [ ] Publish the release as the latest release
 - [ ] Ensure go-releaser workflows execute successfully
   - [ ] Review the release assets
-- [ ] Review, Approve, and Merge the [homebrew-tap](https://github.com/defenseunicorns/homebrew-tap) Pull Request for Lula release
 
 ## Release Issues
 

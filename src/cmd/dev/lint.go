@@ -5,9 +5,9 @@ import (
 	"strings"
 
 	oscalValidation "github.com/defenseunicorns/go-oscal/src/pkg/validation"
-	pkgCommon "github.com/defenseunicorns/lula/src/pkg/common"
-	"github.com/defenseunicorns/lula/src/pkg/common/network"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	pkgCommon "github.com/mike-winberry/lulalib/src/pkg/common"
+	"github.com/mike-winberry/lulalib/src/pkg/common/network"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 	"github.com/spf13/cobra"
 )
 
@@ -34,7 +34,7 @@ func DevLintCommand() *cobra.Command {
 			}
 
 			config, _ := cmd.Flags().GetStringSlice("set")
-			message.Debug("command line 'set' flags: %s", config)
+			message.Debugf("command line 'set' flags: %s", config)
 
 			validationResults := DevLint(inputFiles, config)
 
@@ -103,7 +103,7 @@ func DevLint(inputFiles []string, setOpts []string) []oscalValidation.Validation
 		}
 
 		// add to debug logs accepting that this will print sensitive information?
-		message.Debug(string(output))
+		message.Debugf("linted validation: %s", string(output))
 
 		validations, err := pkgCommon.ReadValidationsFromYaml(output)
 		if err != nil {

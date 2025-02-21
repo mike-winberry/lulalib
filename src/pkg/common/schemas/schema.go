@@ -15,7 +15,7 @@ var Schemas embed.FS
 
 const (
 	SCHEMA_SUFFIX      = ".json"
-	SCHEMA_PATH_PREFIX = "https://github.com/defenseunicorns/lula/tree/main/src/pkg/schemas/"
+	SCHEMA_PATH_PREFIX = "https://github.com/mike-winberry/lulalib/tree/main/src/pkg/schemas/"
 )
 
 func PrefixSchema(path string) string {

@@ -11,9 +11,9 @@ import (
 	"github.com/spf13/cobra"
 	"sigs.k8s.io/yaml"
 
-	pkgCommon "github.com/defenseunicorns/lula/src/pkg/common"
-	"github.com/defenseunicorns/lula/src/pkg/message"
-	"github.com/defenseunicorns/lula/src/types"
+	pkgCommon "github.com/mike-winberry/lulalib/src/pkg/common"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 var validateHelp = `
@@ -82,7 +82,7 @@ func DevValidateCommand() *cobra.Command {
 			}
 
 			config, _ := cmd.Flags().GetStringSlice("set")
-			message.Debug("command line 'set' flags: %s", config)
+			message.Debugf("command line 'set' flags: %s", config)
 
 			output, err := DevTemplate(validationBytes, config)
 			if err != nil {
@@ -90,7 +90,7 @@ func DevValidateCommand() *cobra.Command {
 			}
 
 			// add to debug logs accepting that this will print sensitive information?
-			message.Debug(string(output))
+			message.Debugf("templated validation: %s", string(output))
 
 			ctx = context.WithValue(ctx, types.LulaValidationWorkDir, filepath.Dir(inputFile))
 			validation, err := DevValidate(ctx, output, resourcesBytes, confirmExecution, spinner)

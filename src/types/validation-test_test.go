@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/defenseunicorns/lula/src/internal/transform"
-	"github.com/defenseunicorns/lula/src/pkg/providers/opa"
-	"github.com/defenseunicorns/lula/src/types"
+	"github.com/mike-winberry/lulalib/src/internal/transform"
+	"github.com/mike-winberry/lulalib/src/pkg/providers/opa"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 // TestExecuteTest tests the execution of a single LulaValidationTest

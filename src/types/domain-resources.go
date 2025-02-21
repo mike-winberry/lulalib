@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 )
 
 type DomainResources map[string]interface{}

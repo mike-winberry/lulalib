@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	oscalValidation "github.com/defenseunicorns/go-oscal/src/pkg/validation"
-	"github.com/defenseunicorns/lula/src/cmd/common"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/cmd/common"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 	"github.com/spf13/cobra"
 )
 

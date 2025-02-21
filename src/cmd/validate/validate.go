@@ -8,12 +8,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/defenseunicorns/lula/src/cmd/common"
-	"github.com/defenseunicorns/lula/src/pkg/common/composition"
-	"github.com/defenseunicorns/lula/src/pkg/common/oscal"
-	"github.com/defenseunicorns/lula/src/pkg/common/validation"
-	"github.com/defenseunicorns/lula/src/pkg/message"
-	"github.com/defenseunicorns/lula/src/types"
+	"github.com/mike-winberry/lulalib/src/cmd/common"
+	"github.com/mike-winberry/lulalib/src/pkg/common/composition"
+	"github.com/mike-winberry/lulalib/src/pkg/common/oscal"
+	"github.com/mike-winberry/lulalib/src/pkg/common/validation"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 var validateHelp = `

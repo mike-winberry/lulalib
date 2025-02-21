@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/defenseunicorns/lula/src/internal/transform"
+	"github.com/mike-winberry/lulalib/src/internal/transform"
 )
 
 func TestPathToParts(t *testing.T) {

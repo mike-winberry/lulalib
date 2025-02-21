@@ -3,8 +3,8 @@ package common
 import (
 	"os"
 
-	"github.com/defenseunicorns/lula/src/config"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/config"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 )
 
 func SetupClI(logLevel string) {

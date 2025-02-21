@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/defenseunicorns/lula/src/cmd/tools"
-	"github.com/defenseunicorns/lula/src/internal/testhelpers"
-	"github.com/defenseunicorns/lula/src/types"
+	"github.com/mike-winberry/lulalib/src/cmd/tools"
+	"github.com/mike-winberry/lulalib/src/internal/testhelpers"
+	"github.com/mike-winberry/lulalib/src/types"
 )
 
 const (

@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 )
 
 func doHTTPReq(ctx context.Context, client http.Client, method string, url url.URL, body io.Reader, headers map[string]string, queryParameters url.Values) (*APIResponse, error) {

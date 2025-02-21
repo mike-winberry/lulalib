@@ -6,15 +6,15 @@ import (
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/defenseunicorns/lula/src/internal/testhelpers"
-	"github.com/defenseunicorns/lula/src/pkg/common/oscal"
-	requirementstore "github.com/defenseunicorns/lula/src/pkg/common/requirement-store"
-	validationstore "github.com/defenseunicorns/lula/src/pkg/common/validation-store"
+	"github.com/mike-winberry/lulalib/src/internal/testhelpers"
+	"github.com/mike-winberry/lulalib/src/pkg/common/oscal"
+	requirementstore "github.com/mike-winberry/lulalib/src/pkg/common/requirement-store"
+	validationstore "github.com/mike-winberry/lulalib/src/pkg/common/validation-store"
 )
 
 const (
 	validCompDefMultiValidations = "../../../test/unit/common/oscal/valid-component-no-lula.yaml"
-	controlImplementationSource  = "https://github.com/defenseunicorns/lula"
+	controlImplementationSource  = "https://github.com/mike-winberry/lulalib"
 )
 
 func TestNewRequirementStore(t *testing.T) {

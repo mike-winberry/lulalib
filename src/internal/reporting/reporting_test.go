@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	oscalTypes "github.com/defenseunicorns/go-oscal/src/types/oscal-1-1-3"
-	"github.com/defenseunicorns/lula/src/pkg/common/composition"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/pkg/common/composition"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 )
 
 // Mock functions for each OSCAL model

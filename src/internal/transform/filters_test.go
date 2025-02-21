@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"sigs.k8s.io/kustomize/kyaml/yaml"
 
-	"github.com/defenseunicorns/lula/src/internal/transform"
+	"github.com/mike-winberry/lulalib/src/internal/transform"
 )
 
 func TestResolvePathWithFilters(t *testing.T) {

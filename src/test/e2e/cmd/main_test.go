@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/defenseunicorns/lula/src/test/util"
 	"github.com/google/go-cmp/cmp"
+	"github.com/mike-winberry/lulalib/src/test/util"
 	"github.com/spf13/cobra"
 )
 

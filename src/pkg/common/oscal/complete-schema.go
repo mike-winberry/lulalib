@@ -13,9 +13,9 @@ import (
 	yamlV3 "gopkg.in/yaml.v3"
 	"sigs.k8s.io/yaml"
 
-	"github.com/defenseunicorns/lula/src/internal/transform"
-	"github.com/defenseunicorns/lula/src/pkg/common/network"
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/internal/transform"
+	"github.com/mike-winberry/lulalib/src/pkg/common/network"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 )
 
 const (

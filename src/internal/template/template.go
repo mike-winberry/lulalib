@@ -8,7 +8,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/defenseunicorns/lula/src/pkg/message"
+	"github.com/mike-winberry/lulalib/src/pkg/message"
 )
 
 const (
