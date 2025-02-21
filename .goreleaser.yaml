@@ -23,7 +23,7 @@ builds:
 
 # Save the built artifacts as binaries (instead of wrapping them in a tarball)
 archives:
-  - format: binary
+  - formats: binary
     name_template: "{{ .ProjectName }}_{{ .Tag }}_{{- title .Os }}_{{ .Arch }}"
 
 # generate a sha256 checksum of all release artifacts
@@ -47,8 +47,8 @@ changelog:
 # Generate a GitHub release and publish the release for the tag
 release:
   github:
-    owner: mike-winberry
-    name: lulalib
+    owner: defenseunicorns
+    name: lula
   prerelease: auto
   mode: append
   draft: false
